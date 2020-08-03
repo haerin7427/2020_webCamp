@@ -8,8 +8,8 @@
 </head>
 <body>
 <%   
-	String fname = request.getParameter("fname"); 
-	String lname = request.getParameter("lname");  
+	String fname = request.getParameter("first"); 
+	String lname = request.getParameter("last");  
 	out.print("welcome " + fname + " " + lname );  
 %>  
 </body>
