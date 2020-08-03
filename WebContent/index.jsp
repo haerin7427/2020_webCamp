@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-안녕하세요!
+	<form action="form_ok.jsp">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" value="Submit">
+	</form>
 </body>
 </html>
