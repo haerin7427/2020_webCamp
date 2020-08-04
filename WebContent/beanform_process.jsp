@@ -7,12 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%   
-	String fname = request.getParameter("first"); 
-	String lname = request.getParameter("last");  
-	out.print("welcome " + fname + " " + lname ); 
+<jsp:useBean id="user" class="com.example.User"></jsp:useBean>
+<jsp:setProperty property="*" name="user"/>
 
-%>  
 
+Record:<br>
+
+<jsp:getProperty property="name" name="user"/>
 </body>
 </html>

@@ -8,11 +8,10 @@
 </head>
 <body>
 <%   
-	String fname = request.getParameter("first"); 
-	String lname = request.getParameter("last");  
-	out.print("welcome " + fname + " " + lname ); 
-
-%>  
-
+	String name=(String)session.getAttribute("user0");  
+	out.print("Hello "+name +"\n"); 
+	String age=(String)pageContext.getAttribute("user",PageContext.SESSION_SCOPE);  
+	out.print("(age : "+age +" )");  
+%>
 </body>
 </html>

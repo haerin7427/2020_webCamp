@@ -7,12 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%   
-	String fname = request.getParameter("first"); 
-	String lname = request.getParameter("last");  
-	out.print("welcome " + fname + " " + lname ); 
-
-%>  
-
+<%
+	response.sendRedirect("http://www.google.com"); 
+%>
 </body>
 </html>
